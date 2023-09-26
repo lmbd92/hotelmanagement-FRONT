@@ -26,13 +26,13 @@
           <h1>Find properties available for reservation.</h1>
 
           <mat-form-field>
-            <input matInput name="check_in" ngModel type="text" placeholder="Check in date" #checkInInput="ngModel"
-              required>
+            <input matInput name="check_in" ngModel type="text" placeholder="Check in date (YYYY-MM-DD)"
+              #checkInInput="ngModel" required>
             <mat-error *ngIf="checkInInput.invalid">Please enter a check in date.</mat-error>
           </mat-form-field>
           <mat-form-field>
-            <input matInput name="check_out" ngModel type="text" placeholder="Check out date" #checkOutInput="ngModel"
-              required>
+            <input matInput name="check_out" ngModel type="text" placeholder="Check out date (YYYY-MM-DD)"
+              #checkOutInput="ngModel" required>
             <mat-error *ngIf="checkOutInput.invalid">Please enter a check out date.</mat-error>
           </mat-form-field>
 
@@ -46,14 +46,14 @@
           <h1>Find available properties by city</h1>
 
           <mat-form-field>
-            <input matInput name="check_in" ngModel type="text" placeholder="Check in date" #checkInInput="ngModel"
-              required>
+            <input matInput name="check_in" ngModel type="text" placeholder="Check in date (YYYY-MM-DD)"
+              #checkInInput="ngModel" required>
             <mat-error *ngIf="checkInInput.invalid">Please enter a check in date.</mat-error>
           </mat-form-field>
 
           <mat-form-field>
-            <input matInput name="check_out" ngModel type="text" placeholder="Check out date" #checkOutInput="ngModel"
-              required>
+            <input matInput name="check_out" ngModel type="text" placeholder="Check out date (YYYY-MM-DD)"
+              #checkOutInput="ngModel" required>
             <mat-error *ngIf="checkOutInput.invalid">Please enter a check out date.</mat-error>
           </mat-form-field>
 
@@ -74,8 +74,8 @@
           <h1>Find available properties by name</h1>
 
           <mat-form-field>
-            <input matInput name="check_in" ngModel type="text" placeholder="Check in date" #checkInInput="ngModel"
-              required>
+            <input matInput name="check_in" ngModel type="text" placeholder="Check in date (YYYY-MM-DD)"
+              #checkInInput="ngModel" required>
             <mat-error *ngIf="checkInInput.invalid">Please enter a check in date.</mat-error>
           </mat-form-field>
 
@@ -100,14 +100,14 @@
           <h1>Find rooms at property</h1>
 
           <mat-form-field>
-            <input matInput name="check_in" [(ngModel)]="selectedCheckIn" type="text" placeholder="Check in date"
-              #checkInInput="ngModel" required>
+            <input matInput name="check_in" [(ngModel)]="selectedCheckIn" type="text"
+              placeholder="Check in date (YYYY-MM-DD)" #checkInInput="ngModel" required>
             <mat-error *ngIf="checkInInput.invalid">Please enter a check in date.</mat-error>
           </mat-form-field>
 
           <mat-form-field>
-            <input matInput name="check_out" [(ngModel)]="selectedCheckOut" type="text" placeholder="Check out date"
-              #checkOutInput="ngModel" required>
+            <input matInput name="check_out" [(ngModel)]="selectedCheckOut" type="text"
+              placeholder="Check out date (YYYY-MM-DD)" #checkOutInput="ngModel" required>
             <mat-error *ngIf="checkOutInput.invalid">Please enter a check out date.</mat-error>
           </mat-form-field>
 
@@ -237,15 +237,15 @@
 
 
           <mat-form-field>
-            <input matInput name="check_in" [(ngModel)]="selectedCheckIn" type="text" placeholder="Check in date"
-              #checkInDate="ngModel" required>
+            <input matInput name="check_in" [(ngModel)]="selectedCheckIn" type="text"
+              placeholder="Check in date (YYYY-MM-DD)" #checkInDate="ngModel" required>
             <mat-error *ngIf="checkInDate.invalid">Enter check in date</mat-error>
           </mat-form-field>
 
 
           <mat-form-field>
-            <input matInput name="check_out" [(ngModel)]="selectedCheckOut" type="text" placeholder="Check out date"
-              #checkOutDate="ngModel" required>
+            <input matInput name="check_out" [(ngModel)]="selectedCheckOut" type="text"
+              placeholder="Check out date (YYYY-MM-DD)" #checkOutDate="ngModel" required>
             <mat-error *ngIf="checkOutDate.invalid">Enter check out date</mat-error>
           </mat-form-field>
 
@@ -332,8 +332,8 @@
           <p>{{ "Your reservation id: " + property.reservation_id }}</p>
           <p>{{ "Property name: " + property.property_name }}</p>
           <p>{{ "Phone number: " + property.phone_number }}</p>
-          <p>{{ "Check in date: " + property.check_in.substring(0, 10) }}</p>
-          <p>{{ "Check out date: " + property.check_out.substring(0, 10) }}</p>
+          <p>{{ "Check in date (YYYY-MM-DD): " + property.check_in.substring(0, 10) }}</p>
+          <p>{{ "Check out date (YYYY-MM-DD): " + property.check_out.substring(0, 10) }}</p>
           <p>{{ "Reservation bill: " + property.total_price }}</p>
         </div>
       </div>
