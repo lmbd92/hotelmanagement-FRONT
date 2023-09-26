@@ -1,4 +1,4 @@
-# Hotelmanagement
+# Hotel-management
 
 ![Alt text](./src/assets/image.png?raw=true "Hotel Management")
 
